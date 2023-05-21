@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&family=Wix+Madefor+Display&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+:root {
+  --font: 'Wix Madefor Display', sans-serif;
+  --bgColor: #0C1433;
+  --bgComp1: #330C14;
+  --bgComp2: #14330C;
+}
+
+body {
+  font-family: var(--font), sans-serif;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10px;
+  background: var(--bgColor);
+  color: whitesmoke;
+}
+
+#board {
+    background-color: var(--bgComp1);
+    border: 1px solid whitesmoke;
+    /* width: 99%; */
+}
+
+header {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    font-size: 1rem;
+    color: whitesmoke;
+}
+  
+header a {
+    color: rgba(0, 0, 0, 0.8);
+    text-decoration: none;
+    color: whitesmoke;
+}
+  
+header a:hover {
+    filter: brightness(110%);
+    transition: 0.3s;
+    color: whitesmoke;
+}
+
+.statsBar {
+    display: flex;
+    /* padding: 5px; */
+    margin-top: 0.15rem;
+    margin-bottom: 0.15rem;
+}
+
+.stats {
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.65rem;
+    display: none;
+}
+
+#statsBtn, #refresh {
+    font: inherit;
+    font-size: 0.7rem;
+    width: 135px;
+    border: 1px solid transparent;
+    background-color: transparent;
+    color: whitesmoke;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#refresh {
+    background-color: transparent;
+    border: none;
+    color: whitesmoke;
+    padding-left: 100px;
+}
+#refresh:hover {
+    color: rgba(255, 255, 0, 0.9);
+}
+
+/* @media only screen and (max-width: 800px) {} */

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Javascript Breakout Game</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/icon" href="favicon.ico">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+<body>
+    <!-- header -->
+    <h2><span><small><i class="fa-solid fa-table-tennis-paddle-ball"></i></small></span>
+        Breakout Game using Javascript <i class="fa-brands fa-square-js"></i></h2>
+    <header>
+        <div class="version">
+            <small>
+                <a href="https://github.com/Erik-Varga/js-breakout-game/" target="_blank">Source Code: </a> 
+            v1.0
+            </small>
+            &nbsp;
+        </div>
+        <div>
+            <small>
+                <a href="https://github.com/Erik-Varga" target="_blank">&copy; <script>document.write(new Date().getFullYear())</script> Erik Varga | Web Developer <i class="fa-brands fa-github"></i></a>
+            </small>
+        </div>
+    </header>
+
+<body>
+    <canvas id="board"></canvas>
+    
+    <div class="statsBar">
+        <span class="statsBar" id="statsBtn" onclick="toggleStats()">
+            <i class="fa-solid fa-chart-line"></i>&nbsp;Show
+        </span>
+        <!-- refresh -->
+        <span class="statsBar" id="refresh" onClick="window.location.reload();">
+            <i class="fa-solid fa-arrows-rotate"></i>&nbsp;Restart
+        </span>
+    </div>
+
+    <div class="stats" id="stats">
+        <span class="item">
+            <span>Board:
+                <span id="xBoard">0</span> x <span id="yBoard">0</span>
+            </span>
+            <span>Block:
+                <span id="block-width">0</span>x<span id="block-height">0</span>
+            </span>
+            <span>PX:
+                <span id="pixels-btw">0</span>
+            </span>
+            <span>Col:
+                <span id="block-columns">0</span>
+            </span>
+            <span>Row:
+                <span id="block-rows">0</span>
+            </span>
+        </span>
+        <span class="item">
+            <span>Player:
+                <span id="player-width">0</span>x<span id="player-height">0</span>
+            </span>
+            <span>
+                Calc: 
+                <span id="block-calc">0</span>
+            </span>
+            <span>
+                Count: 
+                <span id="block-count">0</span>
+            </span>
+        </span>
+        <div class="item">
+            <span>Ball Speed: 
+                <span id="bx-speed">0</span>x<span id="by-speed">0</span>
+            </span>
+            <span>Paddle Speed: 
+                <span id="paddle-speed">0</span>
+            </span>
+        </div>
+        <div class="item">
+            Ball
+            <span>
+                <span id="xPos">0</span>
+            </span>
+            <span>
+                x
+            </span>
+            <span>
+                <span id="yPos">0</span>
+            </span>
+        </div>
+    </div>
+
+        
+
+</body>
+
+
+
+<script src="script.js"></script>
+</body>
+</html>
